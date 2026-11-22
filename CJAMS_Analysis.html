@@ -7802,17 +7802,16 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><em>Author: Sunil Jain</em><br/>
-<strong>October 2026 Foster Care Visit Compliance &amp; Risk Audit</strong>
-<em>Ground Rule: Do NOT use AI/LLM.</em><br/>
+<p><em>Author: Sunil Jain</em></p>
+<p><strong>October 2026 Foster Care Visit Compliance &amp; Risk Audit</strong>
 <strong>Goal:</strong> Determine whether children in out-of-home placement (foster care cohort) received required in-person caseworker visits during the target reporting month (Oct 2026) in compliance with federal Title IV-B standards (95% High-Risk Benchmark) and state SSA policy. Audit risk assessment validity and caseworker workload across LDSS jurisdictions with specific scrutiny on High-Risk cases.</p>
 <p><strong>Deliverables Required</strong></p>
 <ol>
-<li><p>Clean Dataset: Create a clean, analysis-ready dataset and document your technical process for data cleaning, relational merging, deduplication, and aggregation logic. We'll use Python in Jupyter Notebbok.</p>
-</li>
-<li><p>Executive Briefing Memo (1–2 Pages): Create a written briefing addressed to the Director of Systems Operations and SSA Executive Leadership summarizing findings, compliance gaps by risk level and LDSS, and operational recommendations.</p>
-</li>
+<li>Clean Dataset: Create a clean, analysis-ready dataset and document your technical process for data cleaning, relational merging, deduplication, and aggregation logic.</li>
+<li>Executive Briefing Memo (1–2 Pages): Create a written briefing addressed to the Director of Systems Operations and SSA Executive Leadership summarizing findings, compliance gaps by risk level and LDSS, and operational recommendations.</li>
 </ol>
+<p><em>Ground Rule: No use AI-LLM.</em>
+<em>Tool of choice: Jupyter Notebook/Python.</em></p>
 </div>
 </div>
 </div>
@@ -7821,7 +7820,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 1. Imports &amp; Data Ingestion</span>
@@ -7987,7 +7986,7 @@ Starting Kid Profiles: 400
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 2. Schema Normalization, Jurisdiction Mapping &amp; Deduplication</span>
@@ -8074,7 +8073,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 3. Reporting Window, Status Transitions &amp; Visit Classification</span>
@@ -8145,7 +8144,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 4. Authoritative Cohort, Jurisdiction &amp; Assessment Quality Tiers)</span>
@@ -8265,9 +8264,9 @@ Missing Primary Safety Concern: 76
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/var/folders/5g/_xx2dh7119q4gwkgghjqt7wr0000gn/T/ipykernel_14735/2522591163.py:51: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+<pre>/var/folders/5g/_xx2dh7119q4gwkgghjqt7wr0000gn/T/ipykernel_16477/2522591163.py:51: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
   cohort['MET_COMPLIANCE'] = cohort['MET_COMPLIANCE'].fillna(False).astype(bool)
-/var/folders/5g/_xx2dh7119q4gwkgghjqt7wr0000gn/T/ipykernel_14735/2522591163.py:66: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
+/var/folders/5g/_xx2dh7119q4gwkgghjqt7wr0000gn/T/ipykernel_16477/2522591163.py:66: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`).Please use a specific unit instead.
   cutoff_stale = pd.Timestamp('2026-10-31') - pd.Timedelta(days=180)
 </pre>
 </div>
@@ -8279,7 +8278,7 @@ Missing Primary Safety Concern: 76
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 5. Research Questions 1–4 &amp; Separated 4-Tier Risk/Dosage Tables</span>
@@ -8616,7 +8615,7 @@ Name: proportion, dtype: float64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 6.Executive Memo Risk Matrix &amp; Jurisdictional Benchmark Chart</span>
@@ -8758,7 +8757,7 @@ Name: proportion, dtype: float64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 7. Contact Quality &amp; Separated 4-Tier Visit Dosage Visuals</span>
@@ -8824,7 +8823,7 @@ Name: proportion, dtype: float64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 8. Reproducible Caseworker Workload &amp; Caseload Scatter Plot</span>
@@ -9384,7 +9383,7 @@ Name: proportion, dtype: float64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 9. Statewide Verification &amp; Accurate Waterfall Reconciliation Audit</span>
@@ -9525,7 +9524,7 @@ Overall Compliance %:     93.8% (375/400)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 10. Complete Multi-Tab Excel Deliverable Export</span>
@@ -9561,7 +9560,7 @@ Overall Compliance %:     93.8% (375/400)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 11. Export Complete HTML Report</span>
@@ -9592,8 +9591,6 @@ Overall Compliance %:     93.8% (375/400)
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
 <pre>[NbConvertApp] Converting notebook CJAMS_Analysis.ipynb to html
-[NbConvertApp] WARNING | Alternative text is missing on 3 image(s).
-[NbConvertApp] Writing 629370 bytes to CJAMS_Analysis.html
 </pre>
 </div>
 </div>
@@ -9604,6 +9601,14 @@ Overall Compliance %:     93.8% (375/400)
 </pre>
 </div>
 </div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>[NbConvertApp] WARNING | Alternative text is missing on 3 image(s).
+[NbConvertApp] Writing 631823 bytes to CJAMS_Analysis.html
+</pre>
+</div>
+</div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=66674c1e">
@@ -9611,7 +9616,7 @@ Overall Compliance %:     93.8% (375/400)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">logged_non_compliant</span> <span class="o">=</span> <span class="n">cohort</span><span class="p">[(</span><span class="o">~</span><span class="n">cohort</span><span class="p">[</span><span class="s1">'MET_COMPLIANCE'</span><span class="p">])</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">cohort</span><span class="p">[</span><span class="s1">'TOTAL_ACTIVE_LOGS'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)][</span>
